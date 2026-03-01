@@ -1,0 +1,16 @@
+# 에디터컨피그 설정 파일
+root = true
+
+[*]
+# 문자 인코딩
+charset = utf-8
+# 들여쓰기 스타일 (공백)
+indent_style = space
+# 들여쓰기 크기 (2칸)
+indent_size = 2
+# 줄 바꿈 문자 (LF 고정)
+end_of_line = lf
+# 마지막 줄에 새 줄 삽입
+insert_final_newline = true
+# 줄 끝의 불필요한 공백 제거
+trim_trailing_whitespace = true

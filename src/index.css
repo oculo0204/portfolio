@@ -1,19 +1,21 @@
 @import 'tailwindcss';
-@import './styles/index.css';
 @import './styles/fonts.css';
 @import './styles/animation.css';
 
 @theme {
+  /* 폰트 */
   --font-sans: 'Pretendard';
-  /* 이미지에서 추출한 주요 색상들 */
-  --color-primary-purple: #7d32ff;
-  --color-primary-blue: #0a66c2;
-  --color-secondary-purple: #9640ff;
 
   /* 배경 및 텍스트 관련 */
   --color-customback-50: #c4c2ba;
   --color-neutral-cream: #fffefd;
   --color-neutral-light: #f3f3f3;
+  --color-header: #fffefd;
+  --color-bgmain: #f7f6f3;
+
+  /* mainpage*/
+  --color-scroll-main: #34a276;
+  --color-btn-main: #2f6f5e;
 
   /* 강조색 (이미지 추출) */
   --color-point-yellow: #ffc832;
@@ -37,7 +39,5 @@ body,
 #root {
   margin: 0 !important;
   padding: 0 !important;
-  width: 1920px !important;
-  height: 1080px !important;
   overflow: hidden !important;
 }

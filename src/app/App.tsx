@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 export default function App() {
   return (
     <LanguageProvider>
-      <div className="overflow-hidden">
+      <div>
         <main>
           <Outlet />
         </main>

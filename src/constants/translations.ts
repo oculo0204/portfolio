@@ -1,6 +1,9 @@
+import { PERSONAL_INFO } from '../constants/personal_info';
+
 export const translations = {
   KR: {
     header: {
+      name: PERSONAL_INFO.name_en,
       home: '홈',
       aboutme: '소개',
       tech: '기술',
@@ -12,10 +15,36 @@ export const translations = {
       title2: '단순한 구조로 해결합니다',
       sub: '기술을 문서화하고 팀의 생산성을 높입니다',
     },
-    // ... 나머지 섹션들
+    aboutme: {
+      title: 'About me.',
+      name: PERSONAL_INFO.name_kr,
+      job: 'Fullstack Developer',
+      profile: 'Profile',
+      location_label: 'Location',
+      location_value: PERSONAL_INFO.location_kr,
+      email_label: 'Email',
+      email_value: PERSONAL_INFO.email,
+      edu_label: 'Education',
+      edu_value: PERSONAL_INFO.university_kr,
+      // 오른쪽 카드 텍스트 (KR)
+      desc_title_p1: '복잡한 문제를 ',
+      desc_title_highlight1: '구조화',
+      desc_title_p2: '하고, ',
+      desc_title_highlight2: '실행',
+      desc_title_p3: ' 가능한 단위로 나누는 개발자입니다.',
+      desc_p1_1: '기능 단위로 문제를 분해하고 ',
+      desc_p1_highlight: '우선순위',
+      desc_p1_2: '를 설정해 빠르게 구현합니다.',
+      desc_p2_1: '팀 협업 과정에서는 ',
+      desc_p2_highlight: '문제 정의 → 해결 과정',
+      desc_p2_2: '까지 ',
+      desc_p2_highlight2: '문서로 정리하고 공유',
+      desc_p2_3: '합니다.',
+    },
   },
   EN: {
     header: {
+      name: PERSONAL_INFO.name_en,
       home: 'Home',
       aboutme: 'About',
       tech: 'Stack',
@@ -26,6 +55,32 @@ export const translations = {
       title1: 'Solving complex problems',
       title2: 'with simple structures',
       sub: 'Documenting tech and boosting team productivity',
+    },
+    aboutme: {
+      title: 'About me.',
+      name: PERSONAL_INFO.name_en,
+      job: 'Fullstack Developer',
+      profile: 'Profile',
+      location_label: 'Location',
+      location_value: PERSONAL_INFO.location_en,
+      email_label: 'Email',
+      email_value: PERSONAL_INFO.email,
+      edu_label: 'Education',
+      edu_value: PERSONAL_INFO.university_en,
+      // 오른쪽 카드 텍스트 (EN)
+      desc_title_p1: 'A developer who ',
+      desc_title_highlight1: 'structures',
+      desc_title_p2: ' complex problems and breaks them into ',
+      desc_title_highlight2: 'actionable',
+      desc_title_p3: ' units.',
+      desc_p1_1: 'I break down problems by function and set ',
+      desc_p1_highlight: 'priorities',
+      desc_p1_2: ' to implement them rapidly.',
+      desc_p2_1: 'In team collaboration, I ',
+      desc_p2_highlight: 'document and share',
+      desc_p2_2: ' everything from ',
+      desc_p2_highlight2: 'problem definition to resolution',
+      desc_p2_3: '.',
     },
   },
 };

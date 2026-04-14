@@ -26,7 +26,7 @@ const HeaderCom = ({ activeSection, setActiveSection }: HeaderProps) => {
     <header className="bg-header fixed top-0 z-50 flex h-[86px] w-full items-center px-[80px]">
       {/* 1. 왼쪽 영역 (로고) - flex-1을 주어 공간 확보 */}
       <div className="flex flex-1 items-center">
-        <div className="font-sans text-[32px] font-medium whitespace-nowrap text-[#111]">SEOWON CHANG</div>
+        <div className="font-sans text-[32px] font-medium whitespace-nowrap text-[#111]">{t.header.name}</div>
       </div>
 
       {/* 2. 중간 영역 (네비게이션) - 중앙 정렬 */}

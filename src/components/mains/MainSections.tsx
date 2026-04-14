@@ -1,10 +1,9 @@
 // src/components/mains/MainSections.tsx
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
 
 interface SectionProps {
   isActive: boolean;
-  children?: ReactNode; // 내부에 들어갈 요소들을 위해 추가
+  children?: React.ReactNode;
 }
 
 export const Section = ({ isActive, children }: SectionProps) => (

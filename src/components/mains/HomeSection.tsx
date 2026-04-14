@@ -1,5 +1,5 @@
-import ArrowRight from '/icons/main/ArrowRight.svg';
-import Profile from '/imgs/main/profile.png';
+import ArrowRight from '../../assets/icons/main/ArrowRight.svg';
+import Profile from '../../assets/imgs/main/profile.png';
 
 const HomeSection = () => {
   return (

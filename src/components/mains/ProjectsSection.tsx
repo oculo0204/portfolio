@@ -1,9 +1,15 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import BG_BOOK from '../../assets/imgs/main/bg-book.png';
 
+const projectRoutes: Record<number, string> = {
+  1: 'linku',
+};
+
 const ProjectsSection = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const navigate = useNavigate();
 
   // motion value (리렌더 없음)
   const mouseX = useMotionValue(0);
@@ -111,6 +117,7 @@ const ProjectsSection = () => {
                 key={proj.id}
                 onMouseEnter={() => setHoveredId(proj.id)}
                 onMouseLeave={() => setHoveredId(null)}
+                onClick={() => projectRoutes[proj.id] && navigate(`/project/${projectRoutes[proj.id]}`)}
                 // skew 대신 3D 회전 속성 사용 (서로 간섭하지 않음)
                 style={{
                   backgroundColor: proj.color,

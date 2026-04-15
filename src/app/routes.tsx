@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import MainPage from '../pages/MainPage';
-import ProjectDetailPage from '../pages/ProjectDetailPage';
+import LinkuProjectDetail from '../pages/projectdetail/LinkuProjectDetail';
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/project/:id',
-        element: <ProjectDetailPage />,
+        element: <LinkuProjectDetail />,
       },
     ],
   },
